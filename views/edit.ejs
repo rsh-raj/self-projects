@@ -14,10 +14,9 @@
 
     <div class="compose">
         
-        <form action="/" method="post">
+        <form action="/edit" method="post">
             <div style="margin:20px">
              <input type="text" placeholder="Title" name="title" value="<%=post.title%>">
-             <input class="hidden" type="text"  name="id" value="<%=id%>">
            </div>
             <textarea name="text" rows="20" cols="70"><%=post.text%></textarea>
             

@@ -21,6 +21,11 @@
                 <p class="text"><%=trimmedContent[i].text%></p>
             
              <%}%>
+             <div style="text-align: center; padding: 20px;" >
+                <a class="btn btn-danger" href="/delete?id=<%=trimmedContent[i]._id%>" role="button">Delete</a>
+                <a class="btn btn-primary" href="/compose?id=<%=trimmedContent[i]._id%>" role="button" style="margin-left:30px">Edit</a></div>
+
+            
             
         </li>
     </ul>
@@ -29,6 +34,7 @@
     <%}%>
     <div style="text-align: center; margin-top: 15px;">
         <h4 class="text">Have something in your mind? <a class="btn btn-link" href="/compose" role="button"  >Write here</a></h2>
+            
     </div>
     <footer>
 

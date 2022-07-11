@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <%-include('partials/head.ejs')%>
+        <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <%-include('partials/header.ejs')%>
+    <h3 class="text">Write something</h3>
+
+    <div class="compose">
+        
+        <form action="/" method="post">
+            <div style="margin:20px">
+             <input type="text" placeholder="Title" name="title">
+           </div>
+            <textarea name="text" rows="20" cols="70"></textarea>
+            
+            <div style="padding: 20px;">
+                <input type="submit" value="Submit" class="btn btn-success" style="margin-right: 10px;">
+                <input type="reset" class="btn btn-warning">
+            </div>
+        </form>
+    </div>
+
+<footer>
+
+        <%-include('partials/footer.ejs')%>
+</footer>
+</body>
+
+</html>

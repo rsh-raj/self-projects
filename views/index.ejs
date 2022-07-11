@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <%-include('partials/head.ejs')%>
+        <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <%-include('partials/header.ejs')%>
+    <%for(let i=0;i<trimmedContent.length;i++){%>
+    <ul>
+        <li>
+            <h3><%=trimmedContent[i].title%></h3>
+              <%if(trimmedContent[i].text.length>280){%>
+                <p class="text"><%=trimmedContent[i].text.substring(0,280)%> <a href=<%="/view?id="+i%> >Read more</a></p>
+
+             <%}else{%>
+                <p class="text"><%=trimmedContent[i].text%></p>
+            
+             <%}%>
+            
+        </li>
+    </ul>
+  
+    <!-- <hr> -->
+    <%}%>
+    <div style="text-align: center; margin-top: 15px;">
+        <h4 class="text">Have something in your mind? <a class="btn btn-link" href="/compose" role="button"  >Write here</a></h2>
+    </div>
+    <footer>
+
+        <%-include('partials/footer.ejs')%>
+    </footer>
+</body>
+
+</html>

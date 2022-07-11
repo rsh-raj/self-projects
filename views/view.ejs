@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%-include('partials/head.ejs') %>
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body style="margin-top: 100px;">
+    <h3><%-content.title%></h3>
+    <p class="text">
+        <%=content.text%>
+    </p>
+    <div class="backButton">
+        <a class="btn btn-primary" href="/" role="button" >Go to home</a>
+    </div>
+
+    <footer>
+        <%-include('partials/footer.ejs')%>
+    </footer>
+</body>
+
+</html>

@@ -92,8 +92,8 @@ app.post("/", function (req, res) {
 
     res.redirect("/");
 });
+let port=process.env.PORT;
 
-
-app.listen(3000, function () {
+app.listen(port || 3000, function () {
     console.log("app is listening at 3000");
 });
